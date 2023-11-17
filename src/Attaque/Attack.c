@@ -5,6 +5,9 @@
 #include <pthread.h>
 #include <math.h>
 
+double g_liste_encryption[SIZE_ALL]; //Stockage des résultats obtenus suite au chiffrement du message clair
+double g_liste_decryption[SIZE_ALL]; //Stockage des résultats obtenus suite au déchiffrement du message crypté
+
 void init_couple(Couple_strings * couple,char * str1 , char * str2)
 {
     if(couple != NULL)
